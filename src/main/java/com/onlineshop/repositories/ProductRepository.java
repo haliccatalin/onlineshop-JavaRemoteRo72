@@ -1,2 +1,9 @@
-package com.onlineshop.repositories;public interface ProductRepository {
+package com.onlineshop.repositories;
+
+import com.onlineshop.models.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Long> {
 }
